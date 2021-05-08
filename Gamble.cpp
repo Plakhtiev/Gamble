@@ -33,7 +33,7 @@ public:
 		LeaveCriticalSection(&g_criticalSection);
 	}
 
-	void ÑomparePrediction() {
+	void ComparePrediction() {
 		std::vector<std::pair<std::string, int>> vec;//create vector for sort map
 
 		std::map<std::string, int> ::iterator it;
@@ -87,7 +87,7 @@ int main()
 		gam.MakePrediction(userName, prediction);
 	}
 
-	gam.ÑomparePrediction();
+	gam.ComparePrediction();
 	gam.ShowPrediction();
 
 	DeleteCriticalSection(&g_criticalSection);
